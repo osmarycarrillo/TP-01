@@ -31,9 +31,16 @@ header {
 
 .menu {
     width: 100%;
+    padding: 0%;
+    margin: 0%;
     li{
         padding: 1em;
         width: 8%;
+        &:hover > ul{
+            display: block;
+            position: absolute;
+            z-index: 1;
+        }
         a{
             text-decoration: none;
             color: grey;
@@ -45,9 +52,16 @@ header {
                 color: rgb(252, 144, 107);
             }
         }
-        ul .sub-menu{
+        ul{
+            width: 200px;
+            padding: 5px;
+            background-color: #fff;
+            display: none;
+            &:hover{
+                display: block;
+            }
             li{
-                background-color: darkgrey;
+                list-style: none;
             }
         }
     }

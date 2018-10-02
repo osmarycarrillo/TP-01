@@ -9,6 +9,7 @@ header {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .nav {
   width: 100%;
 }
@@ -44,6 +45,56 @@ header {
 }
 .menu li ul .sub-menu li {
   background-color: darkgrey;
+=======
+img {
+  width: 100%;
+}
+
+.receta {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.receta h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 15px 0px 40px;
+}
+
+.receta-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.receta-item {
+  margin: 5px;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.receta-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  transform: translateY(100%);
+  transition: all 0.5s ease-out;
+}
+
+.receta-text p {
+  text-align: justify;
+}
+
+.receta-item:hover .receta-text {
+  transform: translateY(0%);
+  background: rgba(255, 93, 53, 0.7);
+}
+
+.receta-item:hover .receta-img {
+  transform: scale(1.15);
+>>>>>>> c5dc92457e676937452e14158d5df9fb456b08c4
 }
 
 /*# sourceMappingURL=style.css.map */

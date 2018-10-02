@@ -105,3 +105,164 @@ img {
 }
 
 
+}
+
+// ORIANA Mobile receta
+@mixin icons{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topmenu{
+    display: none; 
+}
+
+.secreceta{
+    font-family: 'IBM Plex Mono', monospace;
+    margin:0px 10px 0px 10px;
+}
+.banner{
+    width: 100%;
+    img{
+        width: 100%
+
+    }
+}
+
+.breadcrumb{
+    li{
+        display: inline;
+        &::after{
+            content: ">";
+        }
+    }
+
+}
+
+.single{
+    color: grey;
+    margin-left: 20px;
+}
+
+.redes-colors{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+}
+
+.fb{
+    @include icons;
+    background-color: #3b5998;  
+}
+
+.tw{
+    background-color: #55acee;
+    @include icons;
+}
+
+.gg{
+    background-color: #dd4b39;
+    @include icons;
+}
+
+.ig{
+    background-color: #8f6247;
+    @include icons;
+}
+
+.pt{
+    background-color: #cb2027;
+    @include icons;
+}
+
+.pionono{
+   color: grey;
+   width: 100%;
+   margin-top: 20px;
+   text-align: center;
+   img{
+    width: 100%;
+    border-radius: 45px;
+   } 
+   .pie-de-imagen{
+    display: flex;
+    justify-content: space-between;
+   }
+}
+
+.descripcion{
+    color: grey;
+}
+
+.quotecontainer{
+    border-left: 2px solid #fc784f;
+    .name{
+        color: grey;
+        margin-left: 20px;
+    }
+    .quote{
+        margin-left: 20px;
+    }
+}
+
+.ingredients{
+    height: 200px;
+    li{
+        line-height: 30px;
+        color:#fc784f;
+        span{
+            color: grey;
+        }
+    }
+}
+
+.bottomicons{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    .socmedia{
+        display: none;
+    }
+}
+
+.arrowup{
+    text-align: center;
+    border-top: 2px solid rgba(207, 203, 203, 0.781);
+}
+
+.fa-arrow-up{
+    position: relative;
+    bottom: 15px;
+    color: white;
+    font-size: 30px;
+    background-color: #fc784f;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+// ORI Desktop receta
+@media(min-width: 800px){
+
+    .secreceta{
+        width: 500px;
+        margin: auto;
+    }
+    
+    .bottomicons{
+        .socmedia{
+            display: inline-block;
+            font-size: 10px;
+        }
+    }
+
+
+
+}

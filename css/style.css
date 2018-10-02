@@ -9,7 +9,6 @@ header {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .nav {
   width: 100%;
 }
@@ -45,36 +44,31 @@ header {
 }
 .menu li ul .sub-menu li {
   background-color: darkgrey;
-=======
-img {
+}
+.menu img {
   width: 100%;
 }
-
-.receta {
+.menu .receta {
   width: 90%;
   max-width: 1400px;
   margin: auto;
 }
-
-.receta h1 {
+.menu .receta h1 {
   text-align: center;
   font-size: 38px;
   margin: 15px 0px 40px;
 }
-
-.receta-container {
+.menu .receta-container {
   display: flex;
   justify-content: space-between;
 }
-
-.receta-item {
+.menu .receta-item {
   margin: 5px;
   width: 30%;
   position: relative;
   overflow: hidden;
 }
-
-.receta-text {
+.menu .receta-text {
   position: absolute;
   bottom: 0;
   padding: 20px;
@@ -82,19 +76,180 @@ img {
   transform: translateY(100%);
   transition: all 0.5s ease-out;
 }
-
-.receta-text p {
+.menu .receta-text p {
   text-align: justify;
 }
-
-.receta-item:hover .receta-text {
+.menu .receta-item:hover .receta-text {
   transform: translateY(0%);
   background: rgba(255, 93, 53, 0.7);
 }
-
-.receta-item:hover .receta-img {
+.menu .receta-item:hover .receta-img {
   transform: scale(1.15);
->>>>>>> c5dc92457e676937452e14158d5df9fb456b08c4
+}
+
+.topmenu {
+  display: none;
+}
+
+.secreceta {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0px 10px 0px 10px;
+}
+
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li::after {
+  content: ">";
+}
+
+.single {
+  color: grey;
+  margin-left: 20px;
+}
+
+.redes-colors {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+}
+
+.fb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b5998;
+}
+
+.tw {
+  background-color: #55acee;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gg {
+  background-color: #dd4b39;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig {
+  background-color: #8f6247;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pt {
+  background-color: #cb2027;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pionono {
+  color: grey;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.pionono img {
+  width: 100%;
+  border-radius: 45px;
+}
+.pionono .pie-de-imagen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descripcion {
+  color: grey;
+}
+
+.quotecontainer {
+  border-left: 2px solid #fc784f;
+}
+.quotecontainer .name {
+  color: grey;
+  margin-left: 20px;
+}
+.quotecontainer .quote {
+  margin-left: 20px;
+}
+
+.ingredients {
+  height: 200px;
+}
+.ingredients li {
+  line-height: 30px;
+  color: #fc784f;
+}
+.ingredients li span {
+  color: grey;
+}
+
+.bottomicons {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+.bottomicons .socmedia {
+  display: none;
+}
+
+.arrowup {
+  text-align: center;
+  border-top: 2px solid rgba(207, 203, 203, 0.781);
+}
+
+.fa-arrow-up {
+  position: relative;
+  bottom: 15px;
+  color: white;
+  font-size: 30px;
+  background-color: #fc784f;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .secreceta {
+    width: 500px;
+    margin: auto;
+  }
+
+  .bottomicons .socmedia {
+    display: inline-block;
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

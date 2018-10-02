@@ -1,23 +1,278 @@
-body{
-    margin: 0%;
+<<<<<<< HEAD
+h1 {
+text-align: center;
+font-size: 50px;
+color:orangered;
+font-style:normal;
+}
+#header {
+	margin:auto;
+	width:400px;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+ul, ol {
+	list-style:none;
+	display: flex;
+}
+.nav li a {
+	background:white;
+	color:orangered;
+	text-decoration: none;
+	padding:10px 15px;
+	display: block;
+}
+.nav li a:hover {
+	 background-color:#434343;
+
+}
+.nav > li {
+	display:flex;
+}
+.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:40px;
+}
+.nav li:hover> ul{
+	display: block;
 }
 
+img {
+	width: 100%;
+}
+
+.receta {
+	width: 90%;
+	max-width: 1400px;
+	margin:auto;
+}
+
+.receta h1 {
+	text-align: center;
+	font-size:38px;
+	margin: 15px 0px 40px;
+}
+
+.receta-container {
+	display:flex;
+	justify-content: space-between;
+}
+
+.receta-item {
+	margin: 5px;
+	width: 30%;
+	position: relative;
+	overflow: hidden;
+}
+
+.receta-text {
+	position: absolute;
+	bottom: 0;
+	padding: 20px; 
+	color:white;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;	
+}
+
+.receta-text p {
+	text-align: justify;
+}
+
+.receta-item:hover .receta-text {
+	transform: translateY(0%);
+	background: rgba(255,93,53,0.7);
+}
+
+.receta-item:hover .receta-img {
+	transform: scale(1.15);
+}
+
+img {
+	width:100%;
+	
+}
+
+.recetas {
+	width: 90%;
+	max-width: 1400px;
+	margin:auto;
+}
+
+.recetas h3 {
+	text-align: center;
+	font-size:38px;
+	margin: 15px 0px 40px;
+}
+
+.recetas-container {
+	display:flex;
+	justify-content: space-between;
+}
+
+.recetas-item {
+	margin: 5px;
+	width: 30%;
+	position: relative;
+	overflow: hidden;
+	border-radius:30%;
+}
+
+.recetas-text {
+	position: absolute;
+	top:50%;
+	left:50%; 
+	color:black;
+	transition:all 300ms;
+	transform: translate(-50%,-50%) scale(0);
+	z-index:3;
+	padding: 50px;	
+}
+
+.recetas-text p {
+	text-align: justify;
+}
+
+.recetas-item:hover .recetas-text {
+	transform: translate(-50%,-50%) scale(1);
+	background: rgba(255,93,53,0.7);
+	border-radius:50%;
+=======
 // Variables
 // Fuentes
 $mainTitle: "Indie Flower", cursive;
 $secondTitle: "IBM Plex Mono", monospace;
 $colormainFont: rgb(252, 144, 107);
+body {
+    margin: 0%;
+}
 
-
-header{
+header {
     font-family: $mainTitle;
     color: $colormainFont;
     font-size: 20px;
     text-align: center;
 }
 
+.nav {
+    width: 100%;
+    .menu {
+        list-style: none;
+        border-radius: 10px;
+        font-family: $secondTitle;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+            i{
+                display: none;
+            }
+    }
+}
 
+.menu {
+    width: 100%;
+    li{
+        padding: 1em;
+        width: 8%;
+        a{
+            text-decoration: none;
+            color: grey;
+            &:hover{
+                color: rgb(252, 144, 107);
+                cursor: pointer;
+            }
+            &:active{
+                color: rgb(252, 144, 107);
+            }
+        }
+        ul .sub-menu{
+            li{
+                background-color: darkgrey;
+            }
+        }
+    }
+        
+// fiorella - estilos de seccion de imagenes y hover
 
+img {
+	width: 100%;
+}
 
+.receta {
+	width: 90%;
+	max-width: 1400px;
+	margin:auto;
+}
 
+.receta h1 {
+	text-align: center;
+	font-size:38px;
+	margin: 15px 0px 40px;
+}
 
+.receta-container {
+	display:flex;
+	justify-content: space-between;
+}
+
+.receta-item {
+	margin: 5px;
+	width: 30%;
+	position: relative;
+	overflow: hidden;
+}
+
+.receta-text {
+	position: absolute;
+	bottom: 0;
+	padding: 20px; 
+	color:white;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;	
+}
+
+.receta-text p {
+	text-align: justify;
+}
+
+.receta-item:hover .receta-text {
+	transform: translateY(0%);
+	background: rgba(255,93,53,0.7);
+}
+
+.receta-item:hover .receta-img {
+	transform: scale(1.15);
+>>>>>>> ff93f96a014fb944a48b5dc29d22c407e2a276d6
+}
+
+.recetas-item:hover .recetas-img {
+	transform: scale(1.15);
+}
+
+iframe{
+	margin:auto;
+	padding-top: 15px;
+	padding-left: 150px;
+	width:600px; 
+	height:400px; 
+}
+.image {
+	border: solid 7px #111010;
+	height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.description{
+	color: #837c7c;
+	display:block;
+	width: 40%;
+	float: initial;
+}
+div{
+	display: flex;
+	text-align: center;
+	align-items: flex-end;
+}
+p{
+	color: #111010
+}
+ 

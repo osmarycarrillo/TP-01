@@ -1,142 +1,3 @@
-<<<<<<< HEAD
-h1 {
-text-align: center;
-font-size: 50px;
-color:orangered;
-font-style:normal;
-}
-#header {
-	margin:auto;
-	width:400px;
-	font-family:Arial, Helvetica, sans-serif;	
-}
-ul, ol {
-	list-style:none;
-	display: flex;
-}
-.nav li a {
-	background:white;
-	color:orangered;
-	text-decoration: none;
-	padding:10px 15px;
-	display: block;
-}
-.nav li a:hover {
-	 background-color:#434343;
-
-}
-.nav > li {
-	display:flex;
-}
-.nav li ul {
-	display:none;
-	position:absolute;
-	min-width:40px;
-}
-.nav li:hover> ul{
-	display: block;
-}
-
-img {
-	width: 100%;
-}
-
-.receta {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-.receta h1 {
-	text-align: center;
-	font-size:38px;
-	margin: 15px 0px 40px;
-}
-
-.receta-container {
-	display:flex;
-	justify-content: space-between;
-}
-
-.receta-item {
-	margin: 5px;
-	width: 30%;
-	position: relative;
-	overflow: hidden;
-}
-
-.receta-text {
-	position: absolute;
-	bottom: 0;
-	padding: 20px; 
-	color:white;
-	transform: translateY(100%);
-	transition: all 0.5s ease-out;	
-}
-
-.receta-text p {
-	text-align: justify;
-}
-
-.receta-item:hover .receta-text {
-	transform: translateY(0%);
-	background: rgba(255,93,53,0.7);
-}
-
-.receta-item:hover .receta-img {
-	transform: scale(1.15);
-}
-
-img {
-	width:100%;
-	
-}
-
-.recetas {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-.recetas h3 {
-	text-align: center;
-	font-size:38px;
-	margin: 15px 0px 40px;
-}
-
-.recetas-container {
-	display:flex;
-	justify-content: space-between;
-}
-
-.recetas-item {
-	margin: 5px;
-	width: 30%;
-	position: relative;
-	overflow: hidden;
-	border-radius:30%;
-}
-
-.recetas-text {
-	position: absolute;
-	top:50%;
-	left:50%; 
-	color:black;
-	transition:all 300ms;
-	transform: translate(-50%,-50%) scale(0);
-	z-index:3;
-	padding: 50px;	
-}
-
-.recetas-text p {
-	text-align: justify;
-}
-
-.recetas-item:hover .recetas-text {
-	transform: translate(-50%,-50%) scale(1);
-	background: rgba(255,93,53,0.7);
-	border-radius:50%;
-=======
 // Variables
 // Fuentes
 $mainTitle: "Indie Flower", cursive;
@@ -203,6 +64,16 @@ img {
 	margin:auto;
 }
 
+img {
+	width: 100%;
+}
+
+.receta {
+	width: 90%;
+	max-width: 1400px;
+	margin:auto;
+}
+
 .receta h1 {
 	text-align: center;
 	font-size:38px;
@@ -241,7 +112,206 @@ img {
 
 .receta-item:hover .receta-img {
 	transform: scale(1.15);
->>>>>>> ff93f96a014fb944a48b5dc29d22c407e2a276d6
+}
+
+
+}
+
+// ORIANA Mobile receta
+@mixin icons{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topmenu{
+    display: none; 
+}
+
+.secreceta{
+    font-family: 'IBM Plex Mono', monospace;
+    margin:0px 10px 0px 10px;
+}
+.banner{
+    width: 100%;
+    img{
+        width: 100%
+
+    }
+}
+
+.breadcrumb{
+    li{
+        display: inline;
+        &::after{
+            content: ">";
+        }
+    }
+
+}
+
+.single{
+    color: grey;
+    margin-left: 20px;
+}
+
+.redes-colors{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+}
+
+.fb{
+    @include icons;
+    background-color: #3b5998;  
+}
+
+.tw{
+    background-color: #55acee;
+    @include icons;
+}
+
+.gg{
+    background-color: #dd4b39;
+    @include icons;
+}
+
+.ig{
+    background-color: #8f6247;
+    @include icons;
+}
+
+.pt{
+    background-color: #cb2027;
+    @include icons;
+}
+
+.pionono{
+   color: grey;
+   width: 100%;
+   margin-top: 20px;
+   text-align: center;
+   img{
+    width: 100%;
+    border-radius: 45px;
+   } 
+   .pie-de-imagen{
+    display: flex;
+    justify-content: space-between;
+   }
+}
+
+.descripcion{
+    color: grey;
+}
+
+.quotecontainer{
+    border-left: 2px solid #fc784f;
+    .name{
+        color: grey;
+        margin-left: 20px;
+    }
+    .quote{
+        margin-left: 20px;
+    }
+}
+
+.ingredients{
+    height: 200px;
+    li{
+        line-height: 30px;
+        color:#fc784f;
+        span{
+            color: grey;
+        }
+    }
+}
+
+.bottomicons{
+    color: grey;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    .socmedia{
+        display: none;
+    }
+}
+
+.arrowup{
+    text-align: center;
+    border-top: 2px solid rgba(207, 203, 203, 0.781);
+}
+
+.fa-arrow-up{
+    position: relative;
+    bottom: 15px;
+    color: white;
+    font-size: 30px;
+    background-color: #fc784f;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+// ORI Desktop receta
+@media(min-width: 800px){
+
+    .secreceta{
+        width: 500px;
+        margin: auto;
+    }
+    
+    .bottomicons{
+        .socmedia{
+            display: inline-block;
+            font-size: 10px;
+        }
+    }
+
+.receta h1 {
+	text-align: center;
+	font-size:38px;
+	margin: 15px 0px 40px;
+}
+
+.receta-container {
+	display:flex;
+	justify-content: space-between;
+}
+
+
+.receta-item {
+	margin: 5px;
+	width: 30%;
+	position: relative;
+	overflow: hidden;
+}
+
+.receta-text {
+	position: absolute;
+	bottom: 0;
+	padding: 20px; 
+	color:white;
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;	
+}
+
+.receta-text p {
+	text-align: justify;
+}
+
+.receta-item:hover .receta-text {
+	transform: translateY(0%);
+	background: rgba(255,93,53,0.7);
+}
+
+.receta-item:hover .receta-img {
+	transform: scale(1.15);
 }
 
 .recetas-item:hover .recetas-img {
@@ -273,6 +343,6 @@ div{
 	align-items: flex-end;
 }
 p{
-	color: #111010
+    color: #111010;
 }
- 
+}

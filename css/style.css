@@ -1,0 +1,339 @@
+body {
+  margin: 0%;
+}
+
+header {
+  font-family: "Indie Flower", cursive;
+  color: #fc906b;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+}
+.nav .menu {
+  list-style: none;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.nav .menu i {
+  display: none;
+}
+
+.menu {
+  width: 100%;
+}
+.menu li {
+  padding: 1em;
+  width: 8%;
+}
+.menu li a {
+  text-decoration: none;
+  color: grey;
+}
+.menu li a:hover {
+  color: #fc906b;
+  cursor: pointer;
+}
+.menu li a:active {
+  color: #fc906b;
+}
+.menu li ul .sub-menu li {
+  background-color: darkgrey;
+}
+.menu img {
+  width: 100%;
+}
+.menu .receta {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+.menu img {
+  width: 100%;
+}
+.menu .receta {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+.menu .receta h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 15px 0px 40px;
+}
+.menu .receta-container {
+  display: flex;
+  justify-content: space-between;
+}
+.menu .receta-item {
+  margin: 5px;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.menu .receta-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: white;
+  transform: translateY(100%);
+  transition: all 0.5s ease-out;
+}
+.menu .receta-text p {
+  text-align: justify;
+}
+.menu .receta-item:hover .receta-text {
+  transform: translateY(0%);
+  background: rgba(255, 93, 53, 0.7);
+}
+.menu .receta-item:hover .receta-img {
+  transform: scale(1.15);
+}
+
+.topmenu {
+  display: none;
+}
+
+.secreceta {
+  font-family: "IBM Plex Mono", monospace;
+  margin: 0px 10px 0px 10px;
+}
+
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb li::after {
+  content: ">";
+}
+
+.single {
+  color: grey;
+  margin-left: 20px;
+}
+
+.redes-colors {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 25px;
+}
+
+.fb {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3b5998;
+}
+
+.tw {
+  background-color: #55acee;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gg {
+  background-color: #dd4b39;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ig {
+  background-color: #8f6247;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pt {
+  background-color: #cb2027;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pionono {
+  color: grey;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.pionono img {
+  width: 100%;
+  border-radius: 45px;
+}
+.pionono .pie-de-imagen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descripcion {
+  color: grey;
+}
+
+.quotecontainer {
+  border-left: 2px solid #fc784f;
+}
+.quotecontainer .name {
+  color: grey;
+  margin-left: 20px;
+}
+.quotecontainer .quote {
+  margin-left: 20px;
+}
+
+.ingredients {
+  height: 200px;
+}
+.ingredients li {
+  line-height: 30px;
+  color: #fc784f;
+}
+.ingredients li span {
+  color: grey;
+}
+
+.bottomicons {
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+.bottomicons .socmedia {
+  display: none;
+}
+
+.arrowup {
+  text-align: center;
+  border-top: 2px solid rgba(207, 203, 203, 0.781);
+}
+
+.fa-arrow-up {
+  position: relative;
+  bottom: 15px;
+  color: white;
+  font-size: 30px;
+  background-color: #fc784f;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .secreceta {
+    width: 500px;
+    margin: auto;
+  }
+
+  .bottomicons .socmedia {
+    display: inline-block;
+    font-size: 10px;
+  }
+
+  .receta h1 {
+    text-align: center;
+    font-size: 38px;
+    margin: 15px 0px 40px;
+  }
+
+  .receta-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .receta-item {
+    margin: 5px;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .receta-text {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+  }
+
+  .receta-text p {
+    text-align: justify;
+  }
+
+  .receta-item:hover .receta-text {
+    transform: translateY(0%);
+    background: rgba(255, 93, 53, 0.7);
+  }
+
+  .receta-item:hover .receta-img {
+    transform: scale(1.15);
+  }
+
+  .recetas-item:hover .recetas-img {
+    transform: scale(1.15);
+  }
+
+  iframe {
+    margin: auto;
+    padding-top: 15px;
+    padding-left: 150px;
+    width: 600px;
+    height: 400px;
+  }
+
+  .image {
+    border: solid 7px #111010;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .description {
+    color: #837c7c;
+    display: block;
+    width: 40%;
+    float: initial;
+  }
+
+  div {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+  }
+
+  p {
+    color: #111010;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

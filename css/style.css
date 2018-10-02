@@ -9,4 +9,41 @@ header {
   text-align: center;
 }
 
+.nav {
+  width: 100%;
+}
+.nav .menu {
+  list-style: none;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.nav .menu i {
+  display: none;
+}
+
+.menu {
+  width: 100%;
+}
+.menu li {
+  padding: 1em;
+  width: 8%;
+}
+.menu li a {
+  text-decoration: none;
+  color: grey;
+}
+.menu li a:hover {
+  color: #fc906b;
+  cursor: pointer;
+}
+.menu li a:active {
+  color: #fc906b;
+}
+.menu li ul .sub-menu li {
+  background-color: darkgrey;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,23 +1,57 @@
-body{
-    margin: 0%;
-}
-
 // Variables
 // Fuentes
 $mainTitle: "Indie Flower", cursive;
 $secondTitle: "IBM Plex Mono", monospace;
 $colormainFont: rgb(252, 144, 107);
+body {
+    margin: 0%;
+}
 
-
-header{
+header {
     font-family: $mainTitle;
     color: $colormainFont;
     font-size: 20px;
     text-align: center;
 }
 
+.nav {
+    width: 100%;
+    .menu {
+        list-style: none;
+        border-radius: 10px;
+        font-family: $secondTitle;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+            i{
+                display: none;
+            }
+    }
+}
 
-
-
+.menu {
+    width: 100%;
+    li{
+        padding: 1em;
+        width: 8%;
+        a{
+            text-decoration: none;
+            color: grey;
+            &:hover{
+                color: rgb(252, 144, 107);
+                cursor: pointer;
+            }
+            &:active{
+                color: rgb(252, 144, 107);
+            }
+        }
+        ul .sub-menu{
+            li{
+                background-color: darkgrey;
+            }
+        }
+    }
+        
+}
 
 

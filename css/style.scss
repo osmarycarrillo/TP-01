@@ -141,8 +141,8 @@ img {
     justify-content: center;
 }
 
-.topmenu{
-    display: none; 
+.nav {
+    display: none;
 }
 
 .secreceta{
@@ -286,77 +286,5 @@ img {
             font-size: 10px;
         }
     }
-
-.receta h1 {
-	text-align: center;
-	font-size:38px;
-	margin: 15px 0px 40px;
 }
-
-.receta-container {
-	display:flex;
-	justify-content: space-between;
-}
-
-
-.receta-item {
-	margin: 5px;
-	width: 30%;
-	position: relative;
-	overflow: hidden;
-}
-
-.receta-text {
-	position: absolute;
-	bottom: 0;
-	padding: 20px; 
-	color:white;
-	transform: translateY(100%);
-	transition: all 0.5s ease-out;	
-}
-
-.receta-text p {
-	text-align: justify;
-}
-
-.receta-item:hover .receta-text {
-	transform: translateY(0%);
-	background: rgba(255,93,53,0.7);
-}
-
-.receta-item:hover .receta-img {
-	transform: scale(1.15);
-}
-
-.recetas-item:hover .recetas-img {
-	transform: scale(1.15);
-}
-
-iframe{
-	margin:auto;
-	padding-top: 15px;
-	padding-left: 150px;
-	width:600px; 
-	height:400px; 
-}
-.image {
-	border: solid 7px #111010;
-	height: 200px;
-  width: 200px;
-  border-radius: 50%;
-}
-.description{
-	color: #837c7c;
-	display:block;
-	width: 40%;
-	float: initial;
-}
-div{
-	display: flex;
-	text-align: center;
-	align-items: flex-end;
-}
-p{
-    color: #111010;
-}
-}
+//Fin parte ori 

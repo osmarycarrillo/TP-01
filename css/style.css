@@ -61,54 +61,47 @@ header {
 .menu li ul li {
   list-style: none;
 }
-.menu img {
-  width: 100%;
-}
-.menu .receta {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto;
-}
-.menu img {
-  width: 100%;
-}
-.menu .receta {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto;
-}
-.menu .receta h1 {
-  text-align: center;
-  font-size: 38px;
-  margin: 15px 0px 40px;
-}
-.menu .receta-container {
+
+.carrusel {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
 }
-.menu .receta-item {
+.carrusel .box {
+  width: 25%;
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 0%;
   margin: 5px;
-  width: 30%;
   position: relative;
-  overflow: hidden;
+  align-items: flex-end;
 }
-.menu .receta-text {
+.carrusel .box:first-of-type {
+  margin-left: 0%;
+}
+.carrusel .box:last-of-type {
+  margin-right: 0%;
+}
+.carrusel .box img {
+  width: 100%;
+}
+.carrusel .box figcaption {
+  text-align: center;
+  width: 100%;
+  height: 0px;
   position: absolute;
-  bottom: 0;
-  padding: 20px;
-  color: white;
-  transform: translateY(100%);
-  transition: all 0.5s ease-out;
+  color: transparent;
+  transition: 0.5s ease;
 }
-.menu .receta-text p {
-  text-align: justify;
+.carrusel .box figcaption p {
+  font-size: 10px;
 }
-.menu .receta-item:hover .receta-text {
-  transform: translateY(0%);
-  background: rgba(255, 93, 53, 0.7);
-}
-.menu .receta-item:hover .receta-img {
-  transform: scale(1.15);
+.carrusel .box:hover > figcaption {
+  height: 100px;
+  background-color: #fc784f;
+  opacity: 0.6;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #fff;
 }
 
 .topmenu {
@@ -273,82 +266,6 @@ header {
   .bottomicons .socmedia {
     display: inline-block;
     font-size: 10px;
-  }
-
-  .receta h1 {
-    text-align: center;
-    font-size: 38px;
-    margin: 15px 0px 40px;
-  }
-
-  .receta-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .receta-item {
-    margin: 5px;
-    width: 30%;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .receta-text {
-    position: absolute;
-    bottom: 0;
-    padding: 20px;
-    color: white;
-    transform: translateY(100%);
-    transition: all 0.5s ease-out;
-  }
-
-  .receta-text p {
-    text-align: justify;
-  }
-
-  .receta-item:hover .receta-text {
-    transform: translateY(0%);
-    background: rgba(255, 93, 53, 0.7);
-  }
-
-  .receta-item:hover .receta-img {
-    transform: scale(1.15);
-  }
-
-  .recetas-item:hover .recetas-img {
-    transform: scale(1.15);
-  }
-
-  iframe {
-    margin: auto;
-    padding-top: 15px;
-    padding-left: 150px;
-    width: 600px;
-    height: 400px;
-  }
-
-  .image {
-    border: solid 7px #111010;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-  }
-
-  .description {
-    color: #837c7c;
-    display: block;
-    width: 40%;
-    float: initial;
-  }
-
-  div {
-    display: flex;
-    text-align: center;
-    align-items: flex-end;
-  }
-
-  p {
-    color: #111010;
   }
 }
 

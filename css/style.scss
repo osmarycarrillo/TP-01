@@ -1,3 +1,4 @@
+// Osmary 
 // Variables
 // Fuentes
 $mainTitle: "Indie Flower", cursive;
@@ -64,71 +65,54 @@ header {
                 list-style: none;
             }
         }
+    }     
+}
+// Fin Osmary
+
+// FIORELLA HOME DESKTOP
+// CARRUSEL IMG
+.carrusel{
+    display: flex;
+    align-items: flex-end;
+    
+    .box{
+        width: 25%;
+        display: flex;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin: 5px;
+        position: relative;
+        align-items: flex-end;
+        &:first-of-type{
+            margin-left: 0%;
+        }
+        &:last-of-type{
+            margin-right: 0%;
+        }
+        img{
+            width: 100%;
+        }
+        figcaption{
+            text-align: center;
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            color: transparent;
+            transition: 0.5s ease;
+            p{
+                font-size: 10px;
+            }
+        }
+        &:hover >figcaption {
+            height: 100px;
+            background-color: #fc784f;
+            opacity: 0.6;
+            font-family: $secondTitle;
+            font-size: 16px;
+            color: #fff;
+
+        }
     }
-        
-// fiorella - estilos de seccion de imagenes y hover
-
-img {
-	width: 100%;
-}
-
-.receta {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-img {
-	width: 100%;
-}
-
-.receta {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-.receta h1 {
-	text-align: center;
-	font-size:38px;
-	margin: 15px 0px 40px;
-}
-
-.receta-container {
-	display:flex;
-	justify-content: space-between;
-}
-
-.receta-item {
-	margin: 5px;
-	width: 30%;
-	position: relative;
-	overflow: hidden;
-}
-
-.receta-text {
-	position: absolute;
-	bottom: 0;
-	padding: 20px; 
-	color:white;
-	transform: translateY(100%);
-	transition: all 0.5s ease-out;	
-}
-
-.receta-text p {
-	text-align: justify;
-}
-
-.receta-item:hover .receta-text {
-	transform: translateY(0%);
-	background: rgba(255,93,53,0.7);
-}
-
-.receta-item:hover .receta-img {
-	transform: scale(1.15);
-}
-
-
 }
 
 // ORIANA Mobile receta
@@ -351,4 +335,3 @@ img {
         }
     }
 }
-//Fin parte ori 

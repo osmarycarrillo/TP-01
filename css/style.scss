@@ -111,12 +111,11 @@ header {
             font-size: 16px;
             color: #fff;
 
-<<<<<<< HEAD
-=======
+
         }
     }
 }
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
+
 
 // ORIANA Mobile receta
 @mixin icons{
@@ -287,13 +286,11 @@ header {
         height: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
         margin-right: 20px;
+        margin-top: 50px;
         
     }
-<<<<<<< HEAD
-}}
-=======
 
     .fb{
         width: 25px;
@@ -341,4 +338,3 @@ header {
         }
     }
 }
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb

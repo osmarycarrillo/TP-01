@@ -103,12 +103,6 @@ header {
   font-size: 16px;
   color: #fff;
 }
-<<<<<<< HEAD
-.menu .topmenu {
-  display: none;
-}
-.menu .secreceta {
-=======
 
 .nav {
   display: none;
@@ -128,42 +122,41 @@ header {
 }
 
 .secreceta {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   font-family: "IBM Plex Mono", monospace;
   margin: 0px 10px 0px 10px;
 }
-.menu .banner {
+
+.banner {
   width: 100%;
 }
-.menu .banner img {
+.banner img {
   width: 100%;
 }
-<<<<<<< HEAD
-.menu .breadcrumb li {
-=======
 
 .breadcrumb {
   font-family: "IBM Plex Mono", monospace;
 }
 .breadcrumb li {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: inline;
 }
-.menu .breadcrumb li::after {
+.breadcrumb li::after {
   content: ">";
 }
-.menu .single {
+
+.single {
   color: grey;
   margin-left: 20px;
   font-family: "IBM Plex Mono", monospace;
 }
-.menu .redes-colors {
+
+.redes-colors {
   display: flex;
   justify-content: space-around;
   color: white;
   font-size: 25px;
 }
-.menu .fb {
+
+.fb {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -172,7 +165,8 @@ header {
   justify-content: center;
   background-color: #3b5998;
 }
-.menu .tw {
+
+.tw {
   background-color: #55acee;
   width: 35px;
   height: 35px;
@@ -181,7 +175,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .gg {
+
+.gg {
   background-color: #dd4b39;
   width: 35px;
   height: 35px;
@@ -190,7 +185,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .ig {
+
+.ig {
   background-color: #8f6247;
   width: 35px;
   height: 35px;
@@ -199,7 +195,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .pt {
+
+.pt {
   background-color: #cb2027;
   width: 35px;
   height: 35px;
@@ -208,64 +205,56 @@ header {
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
-.menu .pionono {
-  color: grey;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-.menu .pionono img {
-  width: 100%;
-  border-radius: 45px;
-}
-.menu .pionono .pie-de-imagen {
-=======
 
 .pie-de-imagen {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: flex;
   justify-content: space-between;
   color: grey;
   text-align: center;
 }
-.menu .descripcion {
+
+.descripcion {
   color: grey;
 }
-.menu .quotecontainer {
+
+.quotecontainer {
   border-left: 2px solid #fc784f;
 }
-.menu .quotecontainer .name {
+.quotecontainer .name {
   color: grey;
   margin-left: 20px;
 }
-.menu .quotecontainer .quote {
+.quotecontainer .quote {
   margin-left: 20px;
 }
-.menu .ingredients {
+
+.ingredients {
   height: 200px;
 }
-.menu .ingredients li {
+.ingredients li {
   line-height: 30px;
   color: #fc784f;
 }
-.menu .ingredients li span {
+.ingredients li span {
   color: grey;
 }
-.menu .bottomicons {
+
+.bottomicons {
   color: grey;
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
 }
-.menu .bottomicons .socmedia {
+.bottomicons .socmedia {
   display: none;
 }
-.menu .arrowup {
+
+.arrowup {
   text-align: center;
   border-top: 2px solid rgba(207, 203, 203, 0.781);
 }
-.menu .fa-arrow-up {
+
+.fa-arrow-up {
   position: relative;
   bottom: 15px;
   color: white;
@@ -276,16 +265,8 @@ header {
   border-radius: 50%;
   text-align: center;
 }
+
 @media (min-width: 800px) {
-<<<<<<< HEAD
-  .menu .secreceta {
-    width: 500px;
-    margin: auto;
-  }
-  .menu .bottomicons .socmedia {
-    display: inline-block;
-    font-size: 10px;
-=======
   .nav {
     display: block;
   }
@@ -306,8 +287,9 @@ header {
     height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     margin-right: 20px;
+    margin-top: 50px;
   }
 
   .fb {
@@ -354,7 +336,6 @@ header {
   }
   footer .fa-arrow-up {
     display: none;
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   }
 }
 

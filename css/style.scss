@@ -1,3 +1,4 @@
+// Osmary 
 // Variables
 // Fuentes
 $mainTitle: "Indie Flower", cursive;
@@ -64,71 +65,58 @@ header {
                 list-style: none;
             }
         }
+    }     
+}
+// Fin Osmary
+
+// FIORELLA HOME DESKTOP
+// CARRUSEL IMG
+.carrusel{
+    display: flex;
+    align-items: flex-end;
+    
+    .box{
+        width: 25%;
+        display: flex;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin: 5px;
+        position: relative;
+        align-items: flex-end;
+        &:first-of-type{
+            margin-left: 0%;
+        }
+        &:last-of-type{
+            margin-right: 0%;
+        }
+        img{
+            width: 100%;
+        }
+        figcaption{
+            text-align: center;
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            color: transparent;
+            transition: 0.5s ease;
+            p{
+                font-size: 10px;
+            }
+        }
+        &:hover >figcaption {
+            height: 100px;
+            background-color: #fc784f;
+            opacity: 0.6;
+            font-family: $secondTitle;
+            font-size: 16px;
+            color: #fff;
+
+<<<<<<< HEAD
+=======
+        }
     }
-        
-// fiorella - estilos de seccion de imagenes y hover
-
-img {
-	width: 100%;
 }
-
-.receta {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-img {
-	width: 100%;
-}
-
-.receta {
-	width: 90%;
-	max-width: 1400px;
-	margin:auto;
-}
-
-.receta h1 {
-	text-align: center;
-	font-size:38px;
-	margin: 15px 0px 40px;
-}
-
-.receta-container {
-	display:flex;
-	justify-content: space-between;
-}
-
-.receta-item {
-	margin: 5px;
-	width: 30%;
-	position: relative;
-	overflow: hidden;
-}
-
-.receta-text {
-	position: absolute;
-	bottom: 0;
-	padding: 20px; 
-	color:white;
-	transform: translateY(100%);
-	transition: all 0.5s ease-out;	
-}
-
-.receta-text p {
-	text-align: justify;
-}
-
-.receta-item:hover .receta-text {
-	transform: translateY(0%);
-	background: rgba(255,93,53,0.7);
-}
-
-.receta-item:hover .receta-img {
-	transform: scale(1.15);
-}
-
-
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
 
 // ORIANA Mobile receta
 @mixin icons{
@@ -140,8 +128,18 @@ img {
     justify-content: center;
 }
 
-.topmenu{
-    display: none; 
+.nav {
+    display: none;
+}
+.firstcontainer{
+    margin:0px 10px 0px 10px;
+}   .pionono{
+    width: 100%;
+    margin-top: 20px;
+    img{
+     width: 100%;
+     border-radius: 45px;
+    }   
 }
 
 .secreceta{
@@ -156,7 +154,9 @@ img {
     }
 }
 
+
 .breadcrumb{
+    font-family: 'IBM Plex Mono', monospace;
     li{
         display: inline;
         &::after{
@@ -165,10 +165,12 @@ img {
     }
 
 }
+ 
 
 .single{
     color: grey;
     margin-left: 20px;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .redes-colors{
@@ -203,19 +205,11 @@ img {
     @include icons;
 }
 
-.pionono{
-   color: grey;
-   width: 100%;
-   margin-top: 20px;
-   text-align: center;
-   img{
-    width: 100%;
-    border-radius: 45px;
-   } 
-   .pie-de-imagen{
+.pie-de-imagen{
     display: flex;
     justify-content: space-between;
-   }
+    color: grey;
+    text-align: center;
 }
 
 .descripcion{
@@ -273,16 +267,78 @@ img {
 
 // ORI Desktop receta
 @media(min-width: 800px){
+    .nav{
+        display: block;
+    }
 
     .secreceta{
         width: 500px;
         margin: auto;
     }
+
+    .firstcontainer{
+        display: flex;
+        width: 600px;
+        height: auto;
+        margin: auto;
+    }
     
+    .redes-colors{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        
+    }
+<<<<<<< HEAD
+}}
+=======
+
+    .fb{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .tw{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .gg{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;    
+    }
+
+    .ig{
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+    }
+
+    .pt{
+        width: 25px;
+        height: 25px;
+        font-size:20px;
+    }
+
     .bottomicons{
+        margin-bottom: 30px;
         .socmedia{
             display: inline-block;
-            font-size: 10px;
+            font-size: 12px;
+            font-family: "IBM Plex Mono", monospace;
         }
     }
-}}
+
+    footer{
+        margin: 25px 60px 20px 60px;
+        .fa-arrow-up{
+            display:none;
+        }
+    }
+}
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb

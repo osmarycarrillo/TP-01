@@ -14,20 +14,37 @@
     <header>
         <h1>Mi Blog de Cocina</h1>
     </header>
+    <nav class="nav">
+        <ul class="menu">
+            <i class="fas fa-bars"></i>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PLATOS</a>
+                <ul class="sub-menu">
+                    <li><a href="">Ensalada</a></li>
+                    <li><a href="">Carne</a></li>
+                    <li><a href="">Helado</a></li>
+                </ul>
+            </li>
+            <li><a href="">SOBRE MI</a></li>
+            <li><a href="">CONTACTO</a></li>
+
+        </ul>
+    </nav>
     
     <div class="banner">
         <img src="../img/banner.jpg">
     </div>
 
-    <section class="secreceta">
-
+   <div class="breadcrumbcont"></div>
         <ul class="breadcrumb">
             <li><i class="fas fa-home"></i> Home </li>
             <li>Archive</li>
         </ul>
 
         <p class="single"> Single Post Blog </p>
- 
+    </div>
+
+    <div class= "firstcontainer">
         <div class="redes-colors">
             <div class="fb"> <i class="fab fa-facebook-f"></i> </div>
             <div class="tw"> <i class="fab fa-twitter"></i> </div>
@@ -35,17 +52,26 @@
             <div class="ig"> <i class="fab fa-instagram"></i> </div>
             <div class="pt"> <i class="fab fa-pinterest-p"> </i></div>
         </div>
+       
 
         <div class="pionono">
             <img src="../img/recetas.JPG">
+        </div>
+    </div> 
+
+    <section class="secreceta">
+        
+        <div class="piononocaption">    
             <p class="pie-de-imagen">
                 By Maria | Septiembre 21, 2018 
                 <i class="far fa-heart"></i>20  
                 <i class="far fa-comment"></i>10  
                 <i class="fas fa-share-alt"></i> 
             </p>
-        </div>
-
+        </div>    
+            
+        
+        
         <article class="artreceta">
             <h2>Pionono Salado</h2>
             <p class="descripcion">
@@ -82,11 +108,13 @@
             <div class="ytb"> <i class="fab fa-youtube"><span class="socmedia"> YOUTUBE</span></i> </div>
         </div>
             
-        <div class="arrowup">
-            <div class= "containerarrow">
-                <i class="fas fa-arrow-up"></i>
+        <a href= "#">
+            <div class="arrowup">
+                <div class= "containerarrow">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
             </div>
-        </div>
+        </a>    
     </footer>
     
 </body>

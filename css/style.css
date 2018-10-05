@@ -61,59 +61,74 @@ header {
 .menu li ul li {
   list-style: none;
 }
-.menu img {
-  width: 100%;
-}
-.menu .receta {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto;
-}
-.menu img {
-  width: 100%;
-}
-.menu .receta {
-  width: 90%;
-  max-width: 1400px;
-  margin: auto;
-}
-.menu .receta h1 {
-  text-align: center;
-  font-size: 38px;
-  margin: 15px 0px 40px;
-}
-.menu .receta-container {
+
+.carrusel {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
 }
-.menu .receta-item {
+.carrusel .box {
+  width: 25%;
+  display: flex;
+  margin-top: 0%;
+  margin-bottom: 0%;
   margin: 5px;
-  width: 30%;
   position: relative;
-  overflow: hidden;
+  align-items: flex-end;
 }
-.menu .receta-text {
+.carrusel .box:first-of-type {
+  margin-left: 0%;
+}
+.carrusel .box:last-of-type {
+  margin-right: 0%;
+}
+.carrusel .box img {
+  width: 100%;
+}
+.carrusel .box figcaption {
+  text-align: center;
+  width: 100%;
+  height: 0px;
   position: absolute;
-  bottom: 0;
-  padding: 20px;
-  color: white;
-  transform: translateY(100%);
-  transition: all 0.5s ease-out;
+  color: transparent;
+  transition: 0.5s ease;
 }
-.menu .receta-text p {
-  text-align: justify;
+.carrusel .box figcaption p {
+  font-size: 10px;
 }
-.menu .receta-item:hover .receta-text {
-  transform: translateY(0%);
-  background: rgba(255, 93, 53, 0.7);
+.carrusel .box:hover > figcaption {
+  height: 100px;
+  background-color: #fc784f;
+  opacity: 0.6;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  color: #fff;
 }
-.menu .receta-item:hover .receta-img {
-  transform: scale(1.15);
-}
+<<<<<<< HEAD
 .menu .topmenu {
   display: none;
 }
 .menu .secreceta {
+=======
+
+.nav {
+  display: none;
+}
+
+.firstcontainer {
+  margin: 0px 10px 0px 10px;
+}
+
+.pionono {
+  width: 100%;
+  margin-top: 20px;
+}
+.pionono img {
+  width: 100%;
+  border-radius: 45px;
+}
+
+.secreceta {
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   font-family: "IBM Plex Mono", monospace;
   margin: 0px 10px 0px 10px;
 }
@@ -123,7 +138,15 @@ header {
 .menu .banner img {
   width: 100%;
 }
+<<<<<<< HEAD
 .menu .breadcrumb li {
+=======
+
+.breadcrumb {
+  font-family: "IBM Plex Mono", monospace;
+}
+.breadcrumb li {
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: inline;
 }
 .menu .breadcrumb li::after {
@@ -132,6 +155,7 @@ header {
 .menu .single {
   color: grey;
   margin-left: 20px;
+  font-family: "IBM Plex Mono", monospace;
 }
 .menu .redes-colors {
   display: flex;
@@ -184,6 +208,7 @@ header {
   align-items: center;
   justify-content: center;
 }
+<<<<<<< HEAD
 .menu .pionono {
   color: grey;
   width: 100%;
@@ -195,8 +220,14 @@ header {
   border-radius: 45px;
 }
 .menu .pionono .pie-de-imagen {
+=======
+
+.pie-de-imagen {
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: flex;
   justify-content: space-between;
+  color: grey;
+  text-align: center;
 }
 .menu .descripcion {
   color: grey;
@@ -246,6 +277,7 @@ header {
   text-align: center;
 }
 @media (min-width: 800px) {
+<<<<<<< HEAD
   .menu .secreceta {
     width: 500px;
     margin: auto;
@@ -253,6 +285,76 @@ header {
   .menu .bottomicons .socmedia {
     display: inline-block;
     font-size: 10px;
+=======
+  .nav {
+    display: block;
+  }
+
+  .secreceta {
+    width: 500px;
+    margin: auto;
+  }
+
+  .firstcontainer {
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin: auto;
+  }
+
+  .redes-colors {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .fb {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .tw {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .gg {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .ig {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .pt {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .bottomicons {
+    margin-bottom: 30px;
+  }
+  .bottomicons .socmedia {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  footer {
+    margin: 25px 60px 20px 60px;
+  }
+  footer .fa-arrow-up {
+    display: none;
+>>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   }
 }
 

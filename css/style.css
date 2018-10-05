@@ -115,6 +115,19 @@ header {
   display: none;
 }
 
+.firstcontainer {
+  margin: 0px 10px 0px 10px;
+}
+
+.pionono {
+  width: 100%;
+  margin-top: 20px;
+}
+.pionono img {
+  width: 100%;
+  border-radius: 45px;
+}
+
 .secreceta {
   font-family: "IBM Plex Mono", monospace;
   margin: 0px 10px 0px 10px;
@@ -127,6 +140,9 @@ header {
   width: 100%;
 }
 
+.breadcrumb {
+  font-family: "IBM Plex Mono", monospace;
+}
 .breadcrumb li {
   display: inline;
 }
@@ -137,6 +153,7 @@ header {
 .single {
   color: grey;
   margin-left: 20px;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .redes-colors {
@@ -196,19 +213,11 @@ header {
   justify-content: center;
 }
 
-.pionono {
-  color: grey;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-.pionono img {
-  width: 100%;
-  border-radius: 45px;
-}
-.pionono .pie-de-imagen {
+.pie-de-imagen {
   display: flex;
   justify-content: space-between;
+  color: grey;
+  text-align: center;
 }
 
 .descripcion {
@@ -265,14 +274,74 @@ header {
 }
 
 @media (min-width: 800px) {
+  .nav {
+    display: block;
+  }
+
   .secreceta {
     width: 500px;
     margin: auto;
   }
 
+  .firstcontainer {
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin: auto;
+  }
+
+  .redes-colors {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .fb {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .tw {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .gg {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .ig {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .pt {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+  }
+
+  .bottomicons {
+    margin-bottom: 30px;
+  }
   .bottomicons .socmedia {
     display: inline-block;
-    font-size: 10px;
+    font-size: 12px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  footer {
+    margin: 25px 60px 20px 60px;
+  }
+  footer .fa-arrow-up {
+    display: none;
   }
 }
 

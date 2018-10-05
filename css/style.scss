@@ -111,13 +111,192 @@ header {
             font-size: 16px;
             color: #fff;
 
-<<<<<<< HEAD
-=======
         }
     }
 }
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
 
+//ESTILOS DE MIDDLE OSMARY
+.middle{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    .middle-box{
+        width: 30%;
+        position: relative;
+        &:hover > span{
+            background-color: #dd4b39;
+        }
+        img{
+            width: 100%;
+            border-radius: 20px;
+            
+        }
+        span{
+            font-family: $secondTitle;
+            padding: 10px;
+            text-align: center;
+            width: 200px;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            border-radius: 20px;
+            background-color:white;
+        }
+        
+    }
+}
+
+// MULTIMEDIA FIORELLA
+.multimedia{
+    font-family: $secondTitle;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+ }
+ .video{
+    font-family: $secondTitle;
+    width: 90%;
+    margin-right: 20px;
+    h6{
+        color:gray;
+        margin-top: 5px;
+    }
+ }
+ .video iframe{
+    font-family: $secondTitle;
+    width: 100%;
+    height: 100%;
+ }
+ .perfil{
+    font-family: $secondTitle;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .titulo{
+    background:pink;
+    width: 100%;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    font-family: $secondTitle;
+    h5{
+        text-align: center;
+        margin: auto;
+    }
+ }
+ .centro{
+    width: 270px;
+    height: 250px;
+    font-family: $secondTitle;
+    img{
+        width:100%;
+       margin-top: 20px;
+        border-radius: 50%;
+    }
+ }
+ .footer{
+    width: 300px;
+    font-family: $secondTitle;
+    p{
+       color: gray;
+    }
+    h5{
+    background:pink;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    }
+ }
+ .receta{
+    font-family: $secondTitle;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .imagenes{
+    width: 70%;
+    display:flex;
+    flex-direction: row;
+    border-top: 1px grey solid;
+    img{
+        width: 40%;
+        height: 30%;
+        margin-top: 10px;
+        border-top-left-radius: 18%;
+        border-top-right-radius: 18%;
+        border-bottom-left-radius: 18%;
+        border-bottom-right-radius: 18%;
+        margin-bottom: 10px;
+    }
+ }
+ .cuerpo1{
+    font-family: $secondTitle;
+    font-size: 12px;
+    display: flex;
+    flex-direction:column;
+    margin-left: 20px;
+    i{
+        border-top: 20px;
+    }
+    h4{
+        color:gray;
+        display: flex;
+        justify-content:space-between;
+    }
+    .leer1 button{
+        width: 100px;
+        font-family: $secondTitle;
+        padding: 10px;
+        background: pink;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+    }
+ }
+ .cuerpo2{
+    font-family: $secondTitle;
+    font-size: 12px;
+    display: flex;
+    flex-direction:column;
+    margin-left: 20px;
+   
+    h4{
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+    }
+ }
+ .leer2 button{
+        width: 100px;
+        font-family: $secondTitle;
+        padding: 10px;
+        background: pink;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+ }
+ .iconos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:space-between;
+    color:gray;
+    i{
+        margin-bottom: 20px;
+        
+    }
+ }
+ 
 // ORIANA Mobile receta
 @mixin icons{
     width: 35px;
@@ -291,9 +470,7 @@ header {
         margin-right: 20px;
         
     }
-<<<<<<< HEAD
-}}
-=======
+}
 
     .fb{
         width: 25px;
@@ -340,5 +517,3 @@ header {
             display:none;
         }
     }
-}
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb

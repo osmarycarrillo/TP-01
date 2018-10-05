@@ -103,12 +103,194 @@ header {
   font-size: 16px;
   color: #fff;
 }
-<<<<<<< HEAD
-.menu .topmenu {
-  display: none;
+
+.middle {
+  margin: auto;
+  margin-top: 15px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
 }
-.menu .secreceta {
-=======
+.middle .middle-box {
+  width: 30%;
+  position: relative;
+}
+.middle .middle-box:hover > span {
+  background-color: #dd4b39;
+}
+.middle .middle-box img {
+  width: 100%;
+  border-radius: 20px;
+}
+.middle .middle-box span {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.multimedia {
+  font-family: "IBM Plex Mono", monospace;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.video {
+  font-family: "IBM Plex Mono", monospace;
+  width: 90%;
+  margin-right: 20px;
+}
+.video h6 {
+  color: gray;
+  margin-top: 5px;
+}
+
+.video iframe {
+  font-family: "IBM Plex Mono", monospace;
+  width: 100%;
+  height: 100%;
+}
+
+.perfil {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.titulo {
+  background: pink;
+  width: 100%;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+.titulo h5 {
+  text-align: center;
+  margin: auto;
+}
+
+.centro {
+  width: 270px;
+  height: 250px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.centro img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.footer {
+  width: 300px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.footer p {
+  color: gray;
+}
+.footer h5 {
+  background: pink;
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.receta {
+  font-family: "IBM Plex Mono", monospace;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.imagenes {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px grey solid;
+}
+.imagenes img {
+  width: 40%;
+  height: 30%;
+  margin-top: 10px;
+  border-top-left-radius: 18%;
+  border-top-right-radius: 18%;
+  border-bottom-left-radius: 18%;
+  border-bottom-right-radius: 18%;
+  margin-bottom: 10px;
+}
+
+.cuerpo1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.cuerpo1 i {
+  border-top: 20px;
+}
+.cuerpo1 h4 {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+.cuerpo1 .leer1 button {
+  width: 100px;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px;
+  background: pink;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cuerpo2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.cuerpo2 h4 {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leer2 button {
+  width: 100px;
+  font-family: "IBM Plex Mono", monospace;
+  padding: 10px;
+  background: pink;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.iconos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.iconos i {
+  margin-bottom: 20px;
+}
 
 .nav {
   display: none;
@@ -128,42 +310,41 @@ header {
 }
 
 .secreceta {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   font-family: "IBM Plex Mono", monospace;
   margin: 0px 10px 0px 10px;
 }
-.menu .banner {
+
+.banner {
   width: 100%;
 }
-.menu .banner img {
+.banner img {
   width: 100%;
 }
-<<<<<<< HEAD
-.menu .breadcrumb li {
-=======
 
 .breadcrumb {
   font-family: "IBM Plex Mono", monospace;
 }
 .breadcrumb li {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: inline;
 }
-.menu .breadcrumb li::after {
+.breadcrumb li::after {
   content: ">";
 }
-.menu .single {
+
+.single {
   color: grey;
   margin-left: 20px;
   font-family: "IBM Plex Mono", monospace;
 }
-.menu .redes-colors {
+
+.redes-colors {
   display: flex;
   justify-content: space-around;
   color: white;
   font-size: 25px;
 }
-.menu .fb {
+
+.fb {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -172,7 +353,8 @@ header {
   justify-content: center;
   background-color: #3b5998;
 }
-.menu .tw {
+
+.tw {
   background-color: #55acee;
   width: 35px;
   height: 35px;
@@ -181,7 +363,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .gg {
+
+.gg {
   background-color: #dd4b39;
   width: 35px;
   height: 35px;
@@ -190,7 +373,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .ig {
+
+.ig {
   background-color: #8f6247;
   width: 35px;
   height: 35px;
@@ -199,7 +383,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu .pt {
+
+.pt {
   background-color: #cb2027;
   width: 35px;
   height: 35px;
@@ -208,64 +393,56 @@ header {
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
-.menu .pionono {
-  color: grey;
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-.menu .pionono img {
-  width: 100%;
-  border-radius: 45px;
-}
-.menu .pionono .pie-de-imagen {
-=======
 
 .pie-de-imagen {
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
   display: flex;
   justify-content: space-between;
   color: grey;
   text-align: center;
 }
-.menu .descripcion {
+
+.descripcion {
   color: grey;
 }
-.menu .quotecontainer {
+
+.quotecontainer {
   border-left: 2px solid #fc784f;
 }
-.menu .quotecontainer .name {
+.quotecontainer .name {
   color: grey;
   margin-left: 20px;
 }
-.menu .quotecontainer .quote {
+.quotecontainer .quote {
   margin-left: 20px;
 }
-.menu .ingredients {
+
+.ingredients {
   height: 200px;
 }
-.menu .ingredients li {
+.ingredients li {
   line-height: 30px;
   color: #fc784f;
 }
-.menu .ingredients li span {
+.ingredients li span {
   color: grey;
 }
-.menu .bottomicons {
+
+.bottomicons {
   color: grey;
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
 }
-.menu .bottomicons .socmedia {
+.bottomicons .socmedia {
   display: none;
 }
-.menu .arrowup {
+
+.arrowup {
   text-align: center;
   border-top: 2px solid rgba(207, 203, 203, 0.781);
 }
-.menu .fa-arrow-up {
+
+.fa-arrow-up {
   position: relative;
   bottom: 15px;
   color: white;
@@ -276,16 +453,8 @@ header {
   border-radius: 50%;
   text-align: center;
 }
+
 @media (min-width: 800px) {
-<<<<<<< HEAD
-  .menu .secreceta {
-    width: 500px;
-    margin: auto;
-  }
-  .menu .bottomicons .socmedia {
-    display: inline-block;
-    font-size: 10px;
-=======
   .nav {
     display: block;
   }
@@ -309,53 +478,51 @@ header {
     align-items: center;
     margin-right: 20px;
   }
+}
+.fb {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
 
-  .fb {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-  }
+.tw {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
 
-  .tw {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-  }
+.gg {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
 
-  .gg {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-  }
+.ig {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
 
-  .ig {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-  }
+.pt {
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+}
 
-  .pt {
-    width: 25px;
-    height: 25px;
-    font-size: 20px;
-  }
+.bottomicons {
+  margin-bottom: 30px;
+}
+.bottomicons .socmedia {
+  display: inline-block;
+  font-size: 12px;
+  font-family: "IBM Plex Mono", monospace;
+}
 
-  .bottomicons {
-    margin-bottom: 30px;
-  }
-  .bottomicons .socmedia {
-    display: inline-block;
-    font-size: 12px;
-    font-family: "IBM Plex Mono", monospace;
-  }
-
-  footer {
-    margin: 25px 60px 20px 60px;
-  }
-  footer .fa-arrow-up {
-    display: none;
->>>>>>> 2d81619a97433014080f405c73ac3b9e3b132edb
-  }
+footer {
+  margin: 25px 60px 20px 60px;
+}
+footer .fa-arrow-up {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
